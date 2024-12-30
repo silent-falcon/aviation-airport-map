@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* example of a global class. Reduces css by a lot */
+.button {
+    @apply bg-blue-300 p-2 rounded hover:bg-blue-600
+}
