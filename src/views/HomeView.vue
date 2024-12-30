@@ -15,7 +15,7 @@ const increment = () => {
   <main>
     <div>
       <h1>{{ message }}</h1>
-      <button @click="increment">Click Me: {{ count }}</button>
+      <button @click="increment" class="bg-blue-200 rounded-md p-5">Click Me: {{ count }}</button>
   </div>
   </main>
 </template>
