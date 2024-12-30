@@ -6,3 +6,7 @@
 .button {
     @apply bg-blue-300 p-2 rounded hover:bg-blue-600
 }
+
+.routerLink {
+    @apply p-3 font-bold text-xl w-full text-center align-middle
+}

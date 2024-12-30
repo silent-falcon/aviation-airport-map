@@ -1,13 +1,13 @@
 <template>
   <div>
-    <router-link to="/map">Map</router-link>
-    <router-link to="/">Home</router-link>
-    <RouterView></RouterView>
+    <Navbar />
+    <router-view />
   </div>
 </template>
 
+
 <script setup>
-import { RouterView, RouterLink } from "vue-router";
+import Navbar from "./components/navbar.vue";
 </script>
 
 <style lang="scss" scoped>
