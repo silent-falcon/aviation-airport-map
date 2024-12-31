@@ -1,10 +1,10 @@
 <template>
-    <div style="height: 600px; width: 800px;">
+    <div class="w-full h-full relative">
       <l-map 
         ref="map" 
         v-model:zoom="zoom" 
         :center="center"
-        style="height: 100%; width: 100%;"
+        :options="mapOptions"
       >
         <l-tile-layer
           :url="tileUrl"
@@ -19,11 +19,17 @@
 <script setup>
 import { ref } from "vue";
 import { LMap, LTileLayer } from "@vue-leaflet/vue-leaflet";
+import "leaflet/dist/leaflet.css";
 
 // Reactive variables
-const zoom = ref(5); // Default zoom level
+const zoom = ref(5);
 const center = ref([38.9182, -78.1944]); // Front Royal, VA coordinates
 const tileUrl = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}";
+
+//Disable attribution control
+const mapOptions = {
+attributionControl: false,
+};
 
 // Options for the tile layer
 const tileOptions = {
@@ -32,6 +38,4 @@ bounds: [[-85, -180], [85, 180]],
 };
 </script>
   
-<style lang="scss" scoped>
-</style>
   
