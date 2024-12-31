@@ -12,15 +12,15 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-import { LMap, LTileLayer } from "@vue-leaflet/vue-leaflet";
-import "leaflet/dist/leaflet.css";
+import { ref } from 'vue';
+import { LMap, LTileLayer } from '@vue-leaflet/vue-leaflet';
+import 'leaflet/dist/leaflet.css';
 
 // Reactive variables
 const zoom = ref(5);
 const center = ref([38.9182, -78.1944]); // Front Royal, VA coordinates
 const tileUrl =
-  "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png";
+  'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png';
 
 //Disable attribution control
 const mapOptions = {

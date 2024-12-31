@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import Map from "@/components/map.vue";
+import Map from '@/components/map.vue';
 </script>
 
 <style lang="scss" scoped></style>

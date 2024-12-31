@@ -1,8 +1,8 @@
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue';
 
 // Reactive state
-const message = "Hello, Script Setup!";
+const message = 'Hello, Script Setup!';
 const count = ref(0);
 
 // Methods
