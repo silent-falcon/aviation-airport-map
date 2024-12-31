@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 
 // Reactive state
-const message = "Hello, Script Setup!";
+const message = 'Hello, Script Setup!';
 const count = ref(0);
 
 // Methods
@@ -15,7 +15,7 @@ const increment = () => {
   <main>
     <div>
       <h1>{{ message }}</h1>
-      <button @click="increment" class="bg-red-200 rounded-md p-5">Click Me: {{ count }}</button>
-  </div>
+      <button @click="increment" class="button">Click Me: {{ count }}</button>
+    </div>
   </main>
 </template>
