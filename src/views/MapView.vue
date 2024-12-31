@@ -1,14 +1,11 @@
 <template>
-    <div class="w-full h-full">
-        <Map />
-    </div>
+  <div class="w-full h-full">
+    <Map />
+  </div>
 </template>
 
 <script setup>
-import Map from '@/components/map.vue';
-
+import Map from "@/components/map.vue";
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

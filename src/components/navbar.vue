@@ -1,14 +1,10 @@
 <template>
-    <div>
-        <router-link to="/map" class="routerLink">Map</router-link>
-        <router-link to="/" class="routerLink">Home</router-link>
-    </div>
+  <div>
+    <router-link to="/map" class="routerLink">Map</router-link>
+    <router-link to="/" class="routerLink">Home</router-link>
+  </div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

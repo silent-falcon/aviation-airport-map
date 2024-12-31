@@ -4,11 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        "sf-primary": "#397da2",
-        "sf-secondary": "6a6d6f"
-      }
+        "sf-primary": "#557da0",
+        "sf-secondary": "#000000",
+      },
     },
   },
   plugins: [],
-}
-
+};
