@@ -20,7 +20,7 @@ import 'leaflet/dist/leaflet.css';
 const zoom = ref(5);
 const center = ref([38.9182, -78.1944]); // Front Royal, VA coordinates
 const tileUrl =
-  'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png';
+  'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}';
 
 //Disable attribution control
 const mapOptions = {
