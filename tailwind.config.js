@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        "sf-primary": "#00668A",
-        "sf-secondary": "004E71"
+        "sf-primary": "#397da2",
+        "sf-secondary": "6a6d6f"
       }
     },
   },

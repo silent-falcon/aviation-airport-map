@@ -1,10 +1,11 @@
 <template>
     <div>
-        This is the map
+        <Map />
     </div>
 </template>
 
 <script setup>
+import Map from '@/components/map.vue';
 
 </script>
 
