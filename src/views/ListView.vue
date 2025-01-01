@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 
 // Reactive state
-const message = 'Hello, Script Setup!';
+const message = 'Hello, From List View!';
 const count = ref(0);
 
 // Methods

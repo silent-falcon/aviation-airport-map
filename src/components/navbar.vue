@@ -1,7 +1,7 @@
 <template>
   <div>
-    <router-link to="/map" class="routerLink">Map</router-link>
-    <router-link to="/" class="routerLink">Home</router-link>
+    <router-link to="/" class="routerLink">Map</router-link>
+    <router-link to="/list" class="routerLink">List</router-link>
   </div>
 </template>
 
