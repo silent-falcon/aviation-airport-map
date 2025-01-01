@@ -16,18 +16,25 @@ import { ref } from 'vue';
 import { LMap, LTileLayer } from '@vue-leaflet/vue-leaflet';
 import 'leaflet/dist/leaflet.css';
 
+//Marker information
+defineProps({
+    markers: {
+        type: Array,
+        required: false
+    }
+})
+
 // Reactive variables
 const zoom = ref(5);
 const center = ref([38.9182, -78.1944]); // Front Royal, VA coordinates
-const tileUrl =
-  'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}';
 
-//Disable attribution control
+// Constant variables
+const tileUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}';
+
 const mapOptions = {
   attributionControl: false,
 };
 
-// Options for the tile layer
 const tileOptions = {
   noWrap: true,
   bounds: [
@@ -35,4 +42,5 @@ const tileOptions = {
     [85, 180],
   ],
 };
+
 </script>

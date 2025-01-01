@@ -1,6 +1,8 @@
 <template>
   <div class="w-full h-full">
-    <Map />
+    <Map>
+        
+    </Map>
   </div>
 </template>
 
